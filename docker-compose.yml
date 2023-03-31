@@ -16,9 +16,9 @@ services:
       - MQTT_BROKER_HOST=mosquitto
       - REDIS_HOST=redis
       - POSTGRESQL_HOST=postgres
-      - VIRTUAL_HOST=lorawan.txio.live 
-      - LETSENCRYPT_HOST=lorawan.txio.live
-      - LETSENCRYPT_EMAIL=tronexia@gmail.com
+      - VIRTUAL_HOST=xxx.xxx.xxx 
+      - LETSENCRYPT_HOST=xxx.xxx.xxx
+      - LETSENCRYPT_EMAIL=xxx@gmail.com
     ports:
       - 8080:8080
 
@@ -60,7 +60,7 @@ services:
     image: eclipse-mosquitto:2
     restart: unless-stopped
     ports:
-      - 1883:1883
+      - 1982:1883
     volumes: 
       - ./configuration/mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf
 
